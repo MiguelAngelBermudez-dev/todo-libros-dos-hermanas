@@ -42,7 +42,7 @@ function cargarTexto(){
   //instancia
   var xhr = new XMLHttpRequest();
   //ENLACE TXT
-  xhr.open('GET', 'bbdd/bill.txt', true);
+  xhr.open('GET', 'bbdd/bill-1.txt', true);
   //manejo de la carga
   xhr.onload = function() {
       if(this.status == 200){
@@ -56,4 +56,22 @@ xhr.send();
 }
 //autoejecucion
 cargarTexto();
-
+//segundo texto de bill gates
+function cargarTexto1(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/bill.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido1");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+//autoejecucion
+cargarTexto1();
