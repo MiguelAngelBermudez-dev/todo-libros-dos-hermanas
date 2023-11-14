@@ -23,10 +23,10 @@ function b1() {
   const input = document.getElementById("input").value;
   switch (input.toUpperCase().trim()) {
     case "BILL GATES":
-      window.location.assign("https://es.wikipedia.org/wiki/Bill_Gates");
+      window.location.assign("bill-gates.html");
       break;
     case "STEVE JOBS":
-      window.location.assign("https://es.wikipedia.org/wiki/Steve_Jobs");
+      window.location.assign("steve-jobs.html");
       break;
     case "MARK ZUCKERBERG":
       window.location.assign("https://es.wikipedia.org/wiki/Mark_Zuckerberg");
@@ -56,6 +56,8 @@ xhr.send();
 }
 //autoejecucion
 cargarTexto();
+
+
 //segundo texto de bill gates
 function cargarTexto1(){
   //instancia
@@ -75,3 +77,84 @@ xhr.send();
 }
 //autoejecucion
 cargarTexto1();
+
+
+//steve jobs
+function cargarTexto2(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/steve-jobs.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido2");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+//autoejecucion
+cargarTexto2();
+
+//steve jobs texto2
+function cargarTexto3(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/steve-jobs1.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido4");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+//autoejecucion
+cargarTexto3();
+
+//mark texto 
+function cargarTexto4(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/mark.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido3");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+//autoejecucion
+cargarTexto4();
+
+//texto 2 mark
+function cargarTexto5(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/mark1.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido5");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+//autoejecucion
+cargarTexto5();
