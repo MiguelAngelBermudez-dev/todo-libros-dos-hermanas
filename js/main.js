@@ -8,8 +8,9 @@ async function fetchHeader() {
   document.body.prepend(headerElement); //se lo envio al body
 }
 
-// Llama a la función asincrónica
-fetchHeader();
+
+
+
 //funcion para imprimir el footer
 async function fetchFooter() {
   const response = await fetch("./template/footer.html"); //direccion de footer.html a constante
@@ -18,7 +19,7 @@ async function fetchFooter() {
   footerElement.innerHTML = footerContent; //introduzco content en footer
   document.body.append(footerElement); //se lo envio al body
 }
-fetchFooter();
+
 function b1() {
   const input = document.getElementById("input").value;
   switch (input.toUpperCase().trim()) {
@@ -29,7 +30,7 @@ function b1() {
       window.location.assign("steve-jobs.html");
       break;
     case "MARK ZUCKERBERG":
-      window.location.assign("https://es.wikipedia.org/wiki/Mark_Zuckerberg");
+      window.location.assign("mark.html");
       break;
     case "ADA LOVELACE":
       window.location.assign("https://es.wikipedia.org/wiki/Ada_Lovelace");
@@ -54,8 +55,7 @@ function cargarTexto(){
 //enviar solicitut
 xhr.send();
 }
-//autoejecucion
-cargarTexto();
+
 
 
 //segundo texto de bill gates
@@ -75,8 +75,7 @@ function cargarTexto1(){
 //enviar solicitut
 xhr.send();
 }
-//autoejecucion
-cargarTexto1();
+
 
 
 //steve jobs
@@ -96,8 +95,7 @@ function cargarTexto2(){
 //enviar solicitut
 xhr.send();
 }
-//autoejecucion
-cargarTexto2();
+
 
 //steve jobs texto2
 function cargarTexto3(){
@@ -116,8 +114,7 @@ function cargarTexto3(){
 //enviar solicitut
 xhr.send();
 }
-//autoejecucion
-cargarTexto3();
+
 
 //mark texto 
 function cargarTexto4(){
@@ -136,8 +133,7 @@ function cargarTexto4(){
 //enviar solicitut
 xhr.send();
 }
-//autoejecucion
-cargarTexto4();
+
 
 //texto 2 mark
 function cargarTexto5(){
@@ -156,5 +152,21 @@ function cargarTexto5(){
 //enviar solicitut
 xhr.send();
 }
-//autoejecucion
+
+// Llama a la función asincrónica al cargar
+window.addEventListener('load', function() {
+  fetchHeader();
+  fetchFooter();
+//autoejecucion 0
+cargarTexto();
+//autoejecucion 1
+cargarTexto1();
+//autoejecucion2
+cargarTexto2();
+//autoejecucion3
+cargarTexto3();
+//autoejecucion4
+cargarTexto4();
+//autoejecucion5
 cargarTexto5();
+});
