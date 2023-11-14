@@ -1,0 +1,49 @@
+Contribución a la Informática
+__________________________________
+
+En 1840 Charles Babbage viajó a Italia para explicar el concepto 
+de la Máquina Analítica en la Universidad de Turín. 
+Entre la audiencia se encontraba el ingeniero militar y 
+matemático Luigi Menabrea, quien publicará más tarde las
+notas de la conferencia, en francés. 
+A Ada se le pidió que hiciera la traducción de lo escrito 
+por Menabrea al inglés, y al hacerlo, añadió un apéndice más
+extenso que fue un artículo en sí mismo, consistiendo en siete
+otas etiquetadas alfabéticamente de la A a la G. Las notas 
+de Ada se publicaron en la revista
+Scientific Memoir en septiembre de 1843,
+con el título 
+de «Sketch of the analytical engine invented by Charles Babbage»,
+14​ que firmó con sus iniciales A. A. L.
+
+En estas notas, Ada escribió:
+Terminamos estas notas siguiendo en detalle los pasos
+a través de los cuales la máquina podría computar
+los Números de Bernoulli,
+siendo este (en la forma en que lo deduciremos) 
+un ejemplo bastante complicado de su poder.
+Ada Lovelace.
+
+Este algoritmo para calcular los números de Bernoulli,
+una serie de fracciones con diferentes aplicaciones 
+en matemáticas, se ha considerado por muchos como el 
+primer programa/algoritmo de la historia. Consecuentemente, 
+muchos perfiles de la figura de Ada Lovelace lo celebran 
+como la primera persona programadora de la historia. 
+Sin embargo, se ha mantenido durante años la controversia 
+sobre el grado de participación de Babbage en la confección
+de las notas de Lovelace. Es una controversia complicada
+debido al hecho de que se ha tomado, en los últimos años,
+la contribución de Ada como "una cuestión de género"
+​y a la atención creciente de la promoción de las mujeres
+en Ciencia, Tecnología, Ingeniería y Matemáticas (STEM).
+
+Actualmente está probado que fue Babbage la primera persona
+que hizo lo que se entiende como un programa,
+ya que escribió algoritmos parecidos entre 6 y 7 años
+antes de la publicación del artículo de Lovelace en 1843.
+Existen 24 de tales 'programas' y tienen características
+idénticas a los de la nota G de Lovelace. 
+La idea general de que ella escribió el primer 
+programa de ordenador de la Historia es sólo un mito
+tratándose en realidad de un trabajo en equipo con Babbage.

@@ -33,7 +33,7 @@ function b1() {
       window.location.assign("mark.html");
       break;
     case "ADA LOVELACE":
-      window.location.assign("https://es.wikipedia.org/wiki/Ada_Lovelace");
+      window.location.assign("ada.html");
       break;
     default:
       alert("no a introducido un dato valido");
@@ -153,6 +153,44 @@ function cargarTexto5(){
 xhr.send();
 }
 
+//ada texto
+
+function cargarTexto6(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/ada.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido6");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+
+//ada texto 2
+function cargarTexto7(){
+  //instancia
+  var xhr = new XMLHttpRequest();
+  //ENLACE TXT
+  xhr.open('GET', 'bbdd/ada1.txt', true);
+  //manejo de la carga
+  xhr.onload = function() {
+      if(this.status == 200){
+         var contenido = xhr.responseText;
+        var contenidoDiv = document.getElementById("contenido7");
+        contenidoDiv.textContent =contenido;
+      }
+};
+//enviar solicitut
+xhr.send();
+}
+
+
 // Llama a la función asincrónica al cargar
 window.addEventListener('load', function() {
   fetchHeader();
@@ -169,4 +207,8 @@ cargarTexto3();
 cargarTexto4();
 //autoejecucion5
 cargarTexto5();
+//autoejecucion6
+cargarTexto6();
+//autoejecucion7
+cargarTexto7();
 });

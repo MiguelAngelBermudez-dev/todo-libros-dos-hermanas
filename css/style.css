@@ -108,7 +108,11 @@ h1{
     outline: none;
     transition: background-color 0.3s;
   }
-  
+  .ada{
+    max-width: 90px;
+    height: auto;
+    
+  }
 .copy{
     background-color: darkgreen ;
 }
@@ -175,6 +179,11 @@ h1{
     grid-row: repeat(1, 50px);
     grid-gap: 20px;
     }
+    .ada{
+        max-width: 70px;
+        height: auto;
+        
+      }
     @media screen and (min-width: 640px) {
         .botones button {
           font-size: 16px;
